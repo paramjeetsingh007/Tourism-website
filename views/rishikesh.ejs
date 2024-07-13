@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishikesh</title>
+    <link rel="stylesheet" href="/rishikesh.css">    
+</head>
+<body>
+    <div id="page1">
+        <header>
+        <div class="navbar">
+            <a href="/Safar">HOME</a>
+            <a href="/tourist">TOURIST PLACES</a>
+            <a href="/activity">ACTIVITY</a>
+            <a href="/blog">BLOGS</a>
+        </div>
+        </header>
+        
+        <div class="rishimg">
+            <h1>Explore Rishikesh Tours!</h1>
+            <img class="rishimg1" src="photos/r1.jpg" alt="Rishikesh">
+            <img class="rishimg1" src="photos/r2.jpg" alt="Rishikesh">
+            <img class="rishimg1" src="photos/r3.jpg" alt="Rishikesh">
+            <img class="rishimg1" src="photos/r4.jpg" alt="Rishikesh">
+            <img class="rishimg1" src="photos/r5.jpg" alt="Rishikesh">
+            <img class="rishimg1" src="photos/r6.jpg" alt="Rishikesh">
+        </div>  
+        <div class="about">
+            <div class="about_rish">
+                <h2>About Rishikesh</h2>
+                <p>Rishikesh is a city in India's northern state of Uttarakhand, in the Himalayan foothills beside the Ganges River. The river is considered holy, and the city is renowned as a center for studying yoga and meditation. Temples and ashrams (centers for spiritual studies) line the eastern bank around Swarg Ashram, a traffic-free, alcohol-free, and vegetarian enclave upstream from Rishikesh town.</p>
+            </div> 
+            <div class="about_rish">
+                <h2>Things to Do in Rishikesh</h2>
+                <p>Visit <b>Lakshman Jhula, Visit Ram Jhula, Rafting, Camping, Bungee Jumping, Flying Fox, Ganga Aarti at Triveni Ghat, See Neer Garh Waterfall, Explore Beatles Ashram, Visit Gita Bhavan, Visit Parmarth Niketan Ashram, Visit Neelkanth Mahadev Temple</b> and many more you can explore.
+                <p>If you are one of those people who enjoy exploring places with a mountainous backdrop, Rishikesh is the ideal place for you to visit. The beautiful tranquil city of Rishikesh is located in southwest Uttarakhand and is termed as the “Gateway to the Garhwal Mountains”. Be it Bungee Jumping or Kayaking, this place has it all. For those looking for a more relaxed experience, there is the Beatles Ashram to visit or attend a Yoga class.</p>
+                <p>After all, Rishikesh is termed as the “Yoga capital of the world”. So saddle up and have a fun time discovering the things to do in Rishikesh, a place that should be on your bucket list. The glistening Ganges is a charmer, the chants of Hindu prayers touch the soul, the scenic backdrop refreshes the senses and the adrenaline-pumping adventures wrecks the nerves the way it should. This list will get you in acquaintance with activities in Rishikesh. Pack your bags now and leave for a vacation to try the listed activities in Rishikesh.</p>
+            </div>
+            <div class="card">
+                <img src="photos/r7.jpg" alt="Rishikesh">
+                <div class="card-caption">
+                    <h2>Lakshman Jhula</h2>
+                    <p>Rishikesh is not only about religious beliefs, ghats or temples; within this ancient city, you can also witness some of the architectural marvels and structures as well! One such structure, the Lakshman Jhula, which is also one of the not to be missed places to visit in Rishikesh, is a suspension bridge that connects Tehri and Pauri districts of Uttarakhand.</p>
+                    <button class="btn" onclick="openForm()">Wants to visit</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="photos/r1.jpg" alt="Rishikesh">
+                <div class="card-caption">
+                    <h2>Ram Jhula</h2>
+                    <p>Another architectural marvel in the yoga capital of India, Ram Jhula is an important landmark of the city and is also one of the sought after Rishikesh tourist places. Located only 3km from the heart of the city, this 450ft suspension bridge connects the banks of the Ganges with Shivananda and Swarga ashrams at both of its end.</p>
+                    <button class="btn" onclick="openForm()">Wants to visit</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="photos/r5.jpg" alt="Rishikesh">
+                <div class="card-caption">
+                    <h2>Triveni Ghat</h2>
+                    <p>Situated on the banks of the holy Ganges, Triveni Ghat is among the most magnetic places to visit in Rishikesh. The confluence point of three of the most sacred rivers in Hindu mythology: Ganga, Yamuna and Saraswathi, this ghat is considered as the most pious among all the other ghats within the vicinity.</p>
+                    <button class="btn" onclick="openForm()">Wants to visit</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="photos/r8.jpg" alt="Rishikesh">
+                <div class="card-caption">
+                    <h2>Rishikund</h2>
+                    <p>Translated in the local language, Rishikund means the 'Pond of the Sage' and is one of the most important places to visit in Rishikesh. A natural hot water spring, it is believed that a pious sage named Kubz was blessed by the Goddess Yamuna who promised to stay in Rishikesh forever.</p>
+                    <button class="btn" onclick="openForm()">Wants to visit</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="photos/r9.jpg" alt="Rishikesh">
+                <div class="card-caption">
+                    <h2>Gita Bhavan</h2>
+                    <p>Another not to be missed places to visit in Rishikesh, Gita Bhawan is also located on the banks of the Ganga River and is adorned by the enchanting charm of the Himalayas. Comprising of a large complex, it serves as an institute where a devotee can learn about Hinduism to a large extent along with participating in many religious and cultural events as well.</p>
+                    <button class="btn" onclick="openForm()">Wants to visit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Popup -->
+    <div id="form-popup" class="form-popup">
+        <form action="/activityform" method="post" class="form-container">
+            <h2>Contact Us</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Activity Name" required></textarea>
+            <button type="submit" class="btn" onclick="submitForm()">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <!-- Message Popup -->
+    <div id="message-popup" class="form-popup">
+        <div class="form-container">
+            <p id="message-text"></p>
+            <button type="button" class="btn" onclick="closeMessage()">OK</button>
+        </div>
+    </div>
+
+
+    <script>
+        // Function to open the form popup
+        function openForm() {
+            document.getElementById('form-popup').style.display = 'block';
+        }
+
+        // Function to close the form popup
+        function closeForm() {
+            document.getElementById('form-popup').style.display = 'none';
+        
+        // Function to submit the form popup
+        function submitForm() {
+            alert("Form submitted successfully!");
+            closeForm();
+        }
+        }
+         // Function to close the message popup
+         function closeMessage() {
+            document.getElementById('message-popup').style.display = 'none';
+            closeForm();
+        }
+
+        // Function to submit the form popup
+        function submitForm() {
+            // Assuming you would handle form submission here
+            // e.g., send data to a server or validate it
+
+            // Display a success message
+            document.getElementById('message-text').textContent = "Form submitted successfully!";
+            document.getElementById('message-popup').style.display = 'flex';
+
+            // Close the form popup
+            // closeForm();
+        }
+    </script>
+    </div>
+
+</body>
+</html>

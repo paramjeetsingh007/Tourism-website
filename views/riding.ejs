@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Riding</title>
+    <link rel="stylesheet" href="/riding.css" />
+  </head>
+  <body>
+    <div id="page1">
+        <header>
+        <div class="navbar">
+            <a href="/Safar">HOME</a>
+            <a href="/tourist">TOURIST PLACES</a>
+            <a href="/activity">ACTIVITY</a>
+            <a href="/blog">BLOGS</a>
+        </div>
+        </header>
+    </div>
+
+    <div class="bikeimg">
+        <h1>Explore Bike Riding!</h1>
+        <img class="bikeimg1" src="photos/bike1.jpg" alt="Bike Riding">
+        <img class="bikeimg1" src="photos/bike2.jpg" alt="Bike Riding">
+        <img class="bikeimg1" src="photos/bike3.jpg" alt="Bike Riding">
+        <img class="bikeimg1" src="photos/bike4.jpg" alt="Bike Riding">
+        <img class="bikeimg1" src="photos/bike5.jpg" alt="Bike Riding">
+        <img class="bikeimg1" src="photos/bike6.jpg" alt="Bike Riding">
+    </div>  
+    <div class="about">
+        <div class="about_bike">
+            <h2>About Bike Riding In Utrakhand</h2>
+            <p>Bike riding in Uttarakhand is nothing short of a breathtaking adventure, offering a unique way to explore the diverse and mesmerizing landscapes of this northern Indian state. Nestled in the lap of the Himalayas, Uttarakhand is renowned for its majestic mountains, lush valleys, and serene rivers. Embarking on a biking journey here means cruising through winding roads flanked by towering peaks and ancient forests, each bend revealing new vistas of natural splendor.<br><br> Riders can traverse the picturesque routes of the Kumaon and Garhwal regions, with destinations like the spiritual city of Rishikesh, the scenic hill station of Nainital, and the tranquil town of Almora, offering captivating stops along the way. The thrill of navigating the challenging terrains, from smooth highways to rugged mountain paths, adds an element of excitement and challenge to the journey.<br><br> Whether it’s the allure of the Ganges River, the charm of the small hill stations, or the serenity of the high-altitude lakes, biking through Uttarakhand is an immersive experience that combines adventure with the tranquil beauty of nature. Each ride through this enchanting state provides an opportunity to connect with the stunning landscapes, vibrant local culture, and the peaceful rhythm of life in the Himalayas.</p>
+        <br>
+        <button class="btn" onclick="openForm()">Wants to visit/Query</button>
+        </div> 
+    </div>
+
+    <!-- Form Popup -->
+    <div id="form-popup" class="form-popup">
+        <form action="/activityform" method="post" class="form-container">
+            <h2>Contact Us</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Activity Name" required></textarea>
+            <button type="submit" class="btn" onclick="submitForm()">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <!-- Message Popup -->
+    <div id="message-popup" class="form-popup">
+        <div class="form-container">
+            <p id="message-text"></p>
+            <button type="button" class="btn" onclick="closeMessage()">OK</button>
+        </div>
+    </div>
+
+
+    <script>
+        // Function to open the form popup
+        function openForm() {
+            document.getElementById('form-popup').style.display = 'block';
+        }
+
+        // Function to close the form popup
+        function closeForm() {
+            document.getElementById('form-popup').style.display = 'none';
+        
+        // Function to submit the form popup
+        function submitForm() {
+            alert("Form submitted successfully!");
+            closeForm();
+        }
+        }
+         // Function to close the message popup
+         function closeMessage() {
+            document.getElementById('message-popup').style.display = 'none';
+            closeForm();
+        }
+
+        // Function to submit the form popup
+        function submitForm() {
+            // Assuming you would handle form submission here
+            // e.g., send data to a server or validate it
+
+            // Display a success message
+            document.getElementById('message-text').textContent = "Form submitted successfully!";
+            document.getElementById('message-popup').style.display = 'flex';
+
+            // Close the form popup
+            // closeForm();
+        }
+    </script>
+    </div>
+
+</body>
+</html>

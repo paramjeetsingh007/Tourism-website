@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bungee Jumping</title>
+    <link rel="stylesheet" href="/jumping.css" />
+  </head>
+  <body>
+    <div id="page1">
+        <header>
+        <div class="navbar">
+            <a href="/Safar">HOME</a>
+            <a href="/tourist">TOURIST PLACES</a>
+            <a href="/activity">ACTIVITY</a>
+            <a href="/blog">BLOGS</a>
+        </div>
+        </header>
+    </div>
+
+    <div class="jumpimg">
+        <h1>Explore Bungee Jumping!</h1>
+        <img class="jumpimg1" src="photos/jump1.jpg" alt="Bungee Jumping">
+        <img class="jumpimg1" src="photos/jump2.jpg" alt="Bungee Jumping">
+        <img class="jumpimg1" src="photos/jump3.jpg" alt="Bungee Jumping">
+        <img class="jumpimg1" src="photos/jump4.jpg" alt="Bungee Jumping">
+        <img class="jumpimg1" src="photos/jump5.jpg" alt="Bungee Jumping">
+        <img class="jumpimg1" src="photos/jump6.jpg" alt="Bungee Jumping">
+    </div>  
+    <div class="about">
+        <div class="about_jump">
+            <h2>About Bungee Jumping In Utrakhand</h2>
+            <p>Bungee jumping in Uttarakhand offers an exhilarating leap into the heart of adventure, providing a thrilling experience for those seeking a rush of adrenaline amid the stunning landscapes of the Himalayas. Set against the backdrop of lush green forests and majestic hills, this extreme sport allows you to experience the exhilarating sensation of freefall from a height that leaves you breathless with excitement.<br><br> The iconic bungee jumping sites in Rishikesh, particularly the Jumpin Heights facility, are renowned for their safety, professionalism, and breathtaking views. As you stand on the edge of the platform, a mix of excitement and anticipation builds as you prepare for the leap of a lifetime. The moment you take the plunge, the world seems to blur around you as you experience the sheer thrill of freefall, followed by the exhilarating bounce and the gradual, serene ascent back up.<br><br> The experience is enhanced by the stunning natural beauty surrounding you, from the tranquil waters of the Ganges River below to the verdant hills and expansive valleys stretching out in the distance. The thrill of the jump, combined with the spectacular scenery, makes bungee jumping in Uttarakhand a truly unforgettable adventure. This extreme sport is not just about overcoming your fears; it’s also about embracing the moment and savoring the incredible views from a unique vantage point.<br><br> Whether you are a seasoned thrill-seeker or a first-time adventurer, bungee jumping in Uttarakhand offers a powerful, heart-pounding experience that is as exhilarating as it is scenic.</p>
+        <br>
+        <button class="btn" onclick="openForm()">Wants to visit/Query</button>
+        </div> 
+    </div>
+
+    <!-- Form Popup -->
+    <div id="form-popup" class="form-popup">
+        <form action="/activityform" method="post" class="form-container">
+            <h2>Contact Us</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Activity Name" required></textarea>
+            <button type="submit" class="btn" onclick="submitForm()">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <!-- Message Popup -->
+    <div id="message-popup" class="form-popup">
+        <div class="form-container">
+            <p id="message-text"></p>
+            <button type="button" class="btn" onclick="closeMessage()">OK</button>
+        </div>
+    </div>
+
+
+    <script>
+        // Function to open the form popup
+        function openForm() {
+            document.getElementById('form-popup').style.display = 'block';
+        }
+
+        // Function to close the form popup
+        function closeForm() {
+            document.getElementById('form-popup').style.display = 'none';
+        
+        // Function to submit the form popup
+        function submitForm() {
+            alert("Form submitted successfully!");
+            closeForm();
+        }
+        }
+         // Function to close the message popup
+         function closeMessage() {
+            document.getElementById('message-popup').style.display = 'none';
+            closeForm();
+        }
+
+        // Function to submit the form popup
+        function submitForm() {
+            // Assuming you would handle form submission here
+            // e.g., send data to a server or validate it
+
+            // Display a success message
+            document.getElementById('message-text').textContent = "Form submitted successfully!";
+            document.getElementById('message-popup').style.display = 'flex';
+
+            // Close the form popup
+            // closeForm();
+        }
+    </script>
+    </div>
+
+</body>
+</html>

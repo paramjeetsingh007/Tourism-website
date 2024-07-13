@@ -1,0 +1,88 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "jetBrains Mono",monospace;
+}
+
+
+.main_page{
+    background-image: url(back.jpg);
+    height: 100vh;
+    padding: 0;
+    position: relative;
+}
+
+.main_page nav{
+    text-align: center;
+    height: 60px;
+    top: 0;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    gap: 50px;
+    opacity: 70%;
+}
+
+nav a{
+    color: white;
+    font-size: 600;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: orangered;
+}
+
+/*  page 5 */
+
+#page5{
+    height: 100vh;
+    position: relative;
+    background-color: #232323;
+    color: white;
+    text-align: center;
+}
+#page5 .header h1{
+    text-align: center;
+    /* margin-top: 200px; */
+}
+.page5-card1 {
+    top: 200px;
+    left: 50px;
+}
+.page5-card2 {
+top: 150px;
+left: 430px;
+}
+.page5-card3 {
+top: 200px;
+left: 800px;
+}
+
+.page5-card4 {
+top: 150px;
+left: 1170px;
+}
+.p5-cards{
+    height: 450px;
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+    /* top: 400px; */
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 30px 10px 30px 10px;
+}
+.p5-cards img{
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+}

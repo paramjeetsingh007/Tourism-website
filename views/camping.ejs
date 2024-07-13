@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camping</title>
+    <link rel="stylesheet" href="/camping.css" />
+  </head>
+  <body>
+    <div id="page1">
+        <header>
+        <div class="navbar">
+            <a href="/Safar">HOME</a>
+            <a href="/tourist">TOURIST PLACES</a>
+            <a href="/activity">ACTIVITY</a>
+            <a href="/blog">BLOGS</a>
+        </div>
+        </header>
+    </div>
+
+    <div class="campimg">
+        <h1>Explore Camping!</h1>
+        <img class="campimg1" src="photos/camp1.jpg" alt="Camping">
+        <img class="campimg1" src="photos/camp2.jpg" alt="Camping">
+        <img class="campimg1" src="photos/camp3.jpg" alt="Camping">
+        <img class="campimg1" src="photos/camp4.jpg" alt="Camping">
+        <img class="campimg1" src="photos/camp5.jpg" alt="Camping">
+        <img class="campimg1" src="photos/camp6.jpg" alt="Camping">
+    </div>  
+    <div class="about">
+        <div class="about_camp">
+            <h2>About Camping In Utrakhand</h2>
+            <p>Camping in Uttarakhand offers an enchanting escape into the heart of nature, where the serene beauty of the Himalayas and the tranquility of the great outdoors come together to create a perfect adventure. Nestled among lush forests, beside pristine rivers, and at the foot of majestic peaks, Uttarakhand provides a diverse range of camping experiences for nature enthusiasts, families, and adventure seekers alike. Imagine setting up your tent beside the crystal-clear waters of a mountain lake, surrounded by the lush greenery of dense pine forests and the soothing sounds of nature.<br><br> Popular camping spots such as Rishikesh, Nainital, and the Valley of Flowers offer breathtaking landscapes and a variety of outdoor activities. In Rishikesh, you can camp by the banks of the Ganges River, enjoying the calming sound of the flowing water and the stunning views of the surrounding hills.<br><br> The area also offers opportunities for rafting, yoga, and bonfires, adding to the charm of the camping experience. Nainital, with its tranquil lakes and scenic beauty, offers lakeside camping where you can enjoy boating on the serene waters and explore the surrounding hills. For a more adventurous experience, the Valley of Flowers provides a unique camping experience amidst alpine meadows and vibrant wildflowers. Here, you can wake up to the sight of rolling hills covered in a blanket of colorful blooms, and spend your days hiking through lush meadows and exploring the diverse flora and fauna.<br><br> Camping in Uttarakhand is not just about sleeping under the stars; it’s about immersing yourself in the natural beauty of the region, disconnecting from the hustle and bustle of city life, and enjoying the simple pleasures of outdoor living. Whether you’re stargazing around a campfire, embarking on a trek through the forests, or simply relaxing in the peaceful surroundings, camping in Uttarakhand offers an unforgettable experience that rejuvenates the soul and refreshes the spirit.</p>
+        <br>
+        <button class="btn" onclick="openForm()">Wants to visit/Query</button>
+        </div> 
+    </div>
+
+    <!-- Form Popup -->
+    <div id="form-popup" class="form-popup">
+        <form action="/activityform" method="post" class="form-container">
+            <h2>Contact Us</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Activity Name" required></textarea>
+            <button type="submit" class="btn" onclick="submitForm()">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <!-- Message Popup -->
+    <div id="message-popup" class="form-popup">
+        <div class="form-container">
+            <p id="message-text"></p>
+            <button type="button" class="btn" onclick="closeMessage()">OK</button>
+        </div>
+    </div>
+
+
+    <script>
+        // Function to open the form popup
+        function openForm() {
+            document.getElementById('form-popup').style.display = 'block';
+        }
+
+        // Function to close the form popup
+        function closeForm() {
+            document.getElementById('form-popup').style.display = 'none';
+        
+        // Function to submit the form popup
+        function submitForm() {
+            alert("Form submitted successfully!");
+            closeForm();
+        }
+        }
+         // Function to close the message popup
+         function closeMessage() {
+            document.getElementById('message-popup').style.display = 'none';
+            closeForm();
+        }
+
+        // Function to submit the form popup
+        function submitForm() {
+            // Assuming you would handle form submission here
+            // e.g., send data to a server or validate it
+
+            // Display a success message
+            document.getElementById('message-text').textContent = "Form submitted successfully!";
+            document.getElementById('message-popup').style.display = 'flex';
+
+            // Close the form popup
+            // closeForm();
+        }
+    </script>
+    </div>
+
+</body>
+</html>

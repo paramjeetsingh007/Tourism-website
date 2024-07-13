@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>River Rafting</title>
+    <link rel="stylesheet" href="/rafting.css" />
+  </head>
+  <body>
+    <div id="page1">
+        <header>
+        <div class="navbar">
+            <a href="/Safar">HOME</a>
+            <a href="/tourist">TOURIST PLACES</a>
+            <a href="/activity">ACTIVITY</a>
+            <a href="/blog">BLOGS</a>
+        </div>
+        </header>
+    </div>
+
+    <div class="raftimg">
+        <h1>Explore River Rafting!</h1>
+        <img class="raftimg1" src="photos/raft1.jpg" alt="River Rafting">
+        <img class="raftimg1" src="photos/raft2.jpg" alt="River Rafting">
+        <img class="raftimg1" src="photos/raft3.jpg" alt="River Rafting">
+        <img class="raftimg1" src="photos/raft4.jpg" alt="River Rafting">
+        <img class="raftimg1" src="photos/raft5.jpg" alt="River Rafting">
+        <img class="raftimg1" src="photos/raft6.jpg" alt="River Rafting">
+    </div>  
+    <div class="about">
+        <div class="about_raft">
+            <h2>About River Rafting In Utrakhand</h2>
+            <p>River rafting is an exhilarating outdoor adventure where participants navigate a river’s rapids using an inflatable raft, blending excitement, teamwork, and natural beauty into one thrilling experience. As you set out on the water, you are guided by experienced instructors who equip you with essential gear, including helmets, personal flotation devices, and paddles.<br><br>The adventure begins with a safety briefing, where you learn techniques for paddling, responding to commands, and handling emergencies. Once on the river, you face a series of rapids, each presenting unique challenges and opportunities for excitement as you work together with your team to steer through turbulent waters, dodge obstacles, and ride the waves. Beyond the adrenaline rush, river rafting offers a chance to immerse yourself in stunning landscapes, from lush forests and rocky canyons to serene riverbanks, providing a fresh perspective on nature’s grandeur. Whether you’re a novice seeking a scenic journey or an adrenaline junkie aiming for extreme thrills, river rafting offers a diverse range of experiences that cater to all levels of adventurers. It’s not just about the challenge of the rapids, but also the joy of exploring the great outdoors and forging connections with fellow rafters through shared experiences and teamwork.</p>
+        <br>
+        <button class="btn" onclick="openForm()">Wants to visit/Query</button>
+        </div> 
+    </div>
+
+    <!-- Form Popup -->
+    <div id="form-popup" class="form-popup">
+        <form action="/activityform" method="post" class="form-container">
+            <h2>Contact Us</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Activity Name" required></textarea>
+            <button type="submit" class="btn" onclick="submitForm()">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <!-- Message Popup -->
+    <div id="message-popup" class="form-popup">
+        <div class="form-container">
+            <p id="message-text"></p>
+            <button type="button" class="btn" onclick="closeMessage()">OK</button>
+        </div>
+    </div>
+
+
+    <script>
+        // Function to open the form popup
+        function openForm() {
+            document.getElementById('form-popup').style.display = 'block';
+        }
+
+        // Function to close the form popup
+        function closeForm() {
+            document.getElementById('form-popup').style.display = 'none';
+        
+        // Function to submit the form popup
+        function submitForm() {
+            alert("Form submitted successfully!");
+            closeForm();
+        }
+        }
+         // Function to close the message popup
+         function closeMessage() {
+            document.getElementById('message-popup').style.display = 'none';
+            closeForm();
+        }
+
+        // Function to submit the form popup
+        function submitForm() {
+            // Assuming you would handle form submission here
+            // e.g., send data to a server or validate it
+
+            // Display a success message
+            document.getElementById('message-text').textContent = "Form submitted successfully!";
+            document.getElementById('message-popup').style.display = 'flex';
+
+            // Close the form popup
+            // closeForm();
+        }
+    </script>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trekking</title>
+    <link rel="stylesheet" href="/trekking.css" />
+  </head>
+  <body>
+    <div id="page1">
+        <header>
+        <div class="navbar">
+            <a href="/Safar">HOME</a>
+            <a href="/tourist">TOURIST PLACES</a>
+            <a href="/activity">ACTIVITY</a>
+            <a href="/blog">BLOGS</a>
+        </div>
+        </header>
+    </div>
+
+    <div class="trekimg">
+        <h1>Explore Trekking!</h1>
+        <img class="trekimg1" src="trek1.jpg" alt="Trekking">
+        <img class="trekimg1" src="trek2.jpg" alt="Trekking">
+        <img class="trekimg1" src="trek3.jpg" alt="Trekking">
+        <img class="trekimg1" src="trek4.jpg" alt="Trekking">
+        <img class="trekimg1" src="trek5.jpg" alt="Trekking">
+        <img class="trekimg1" src="trek6.jpg" alt="Trekking">
+    </div>  
+    <div class="about">
+        <div class="about_trek">
+            <h2>About Trekking In Utrakhand</h2>
+            <p>Trekking in Uttarakhand is a thrilling journey through some of India’s most breathtaking landscapes, offering adventurers a chance to explore the serene beauty of the Himalayas. Known for its diverse range of trekking routes, Uttarakhand provides opportunities for both seasoned trekkers and beginners to immerse themselves in nature’s splendor.<br><br> From the lush forests of the Valley of Flowers to the challenging ascents of the Roopkund Trek, each trail unveils a new facet of the state’s natural wonders. The experience begins with the crisp mountain air and the soothing sounds of gurgling streams as you make your way through verdant valleys and charming villages. The treks here offer not only physical challenges but also spiritual solace, with trails that lead to ancient temples, serene lakes, and panoramic viewpoints.<br><br> The popular treks, such as the Kedarkantha Trek and the Har Ki Dun Trek, are renowned for their stunning vistas, including snow-capped peaks, emerald meadows, and expansive alpine landscapes. Along the way, trekkers can encounter diverse flora and fauna, including rare Himalayan birds and vibrant wildflowers. The journey is as much about personal discovery and connection with the mountains as it is about reaching the summit.<br><br> With every step, you gain a deeper appreciation for the majestic beauty of the Himalayas, the rich cultural heritage of the local communities, and the profound peace that comes from being in nature. Trekking in Uttarakhand is not just an adventure but a transformative experience that offers both physical challenge and spiritual rejuvenation amidst the grandeur of the Himalayas.</p>
+        <br>
+        <button class="btn" onclick="openForm()">Wants to visit/Query</button>
+        </div> 
+    </div>
+
+    <!-- Form Popup -->
+    <div id="form-popup" class="form-popup">
+        <form action="/activityform" method="post"  class="form-container">
+            <h2>Contact Us</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Activity Name" required></textarea>
+            <button type="submit" class="btn" onclick="submitForm()">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <!-- Message Popup -->
+    <div id="message-popup" class="form-popup">
+        <div class="form-container">
+            <p id="message-text"></p>
+            <button type="button" class="btn" onclick="closeMessage()">OK</button>
+        </div>
+    </div>
+
+
+    <script>
+        // Function to open the form popup
+        function openForm() {
+            document.getElementById('form-popup').style.display = 'block';
+        }
+
+        // Function to close the form popup
+        function closeForm() {
+            document.getElementById('form-popup').style.display = 'none';
+        
+        // Function to submit the form popup
+        function submitForm() {
+            alert("Form submitted successfully!");
+            closeForm();
+        }
+        }
+         // Function to close the message popup
+         function closeMessage() {
+            document.getElementById('message-popup').style.display = 'none';
+            closeForm();
+        }
+
+        // Function to submit the form popup
+        function submitForm() {
+            // Assuming you would handle form submission here
+            // e.g., send data to a server or validate it
+
+            // Display a success message
+            document.getElementById('message-text').textContent = "Form submitted successfully!";
+            document.getElementById('message-popup').style.display = 'flex';
+
+            // Close the form popup
+            // closeForm();
+        }
+    </script>
+    </div>
+
+</body>
+</html>

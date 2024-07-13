@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paragliding</title>
+    <link rel="stylesheet" href="/gliding.css" />
+  </head>
+  <body>
+    <div id="page1">
+        <header>
+        <div class="navbar">
+            <a href="/Safar">HOME</a>
+            <a href="/tourist">TOURIST PLACES</a>
+            <a href="/activity">ACTIVITY</a>
+            <a href="/blog">BLOGS</a>
+        </div>
+        </header>
+    </div>
+
+    <div class="glidimg">
+        <h1>Explore Paragliding!</h1>
+        <img class="glidimg1" src="photos/glid1.jpg" alt="Paragliding">
+        <img class="glidimg1" src="photos/glid2.jpg" alt="Paragliding">
+        <img class="glidimg1" src="photos/glid3.jpg" alt="Paragliding">
+        <img class="glidimg1" src="photos/glid4.jpg" alt="Paragliding">
+        <img class="glidimg1" src="photos/glid5.jpg" alt="Paragliding">
+        <img class="glidimg1" src="photos/glid6.jpg" alt="Paragliding">
+    </div>  
+    <div class="about">
+        <div class="about_glid">
+            <h2>About Paragliding In Utrakhand</h2>
+            <p>Paragliding in Uttarakhand offers a breathtaking aerial adventure that lets you soar above the stunning landscapes of the Himalayas, providing a unique perspective on the region’s natural beauty. This exhilarating sport combines the thrill of flight with the serenity of gliding over lush valleys, sparkling rivers, and majestic mountain peaks.<br><br> Popular paragliding destinations such as Nainital, Rishikesh, and Mussoorie offer ideal conditions for both beginners and experienced flyers. In Nainital, the mesmerizing views of Naini Lake and the surrounding hills create a picturesque backdrop as you take off from the gently sloping hillsides. In Rishikesh, you experience the thrill of flying high above the Ganges River, with the verdant terrain of the Rajaji National Park and the grandeur of the Himalayas stretching out below. Mussoorie, known as the "Queen of the Hills," provides panoramic vistas of the Doon Valley and the Shivalik Range from its paragliding launch sites.<br><br> As you ascend into the sky, the sensation of floating effortlessly among the clouds offers a serene escape from everyday life and a profound connection with nature. The experience is not just about the adrenaline rush of the flight but also about the tranquility of gliding through the open air, the thrill of seeing the world from above, and the joy of taking in the sweeping views of Uttarakhand’s diverse landscapes.<br><br> Paragliding in Uttarakhand is an unforgettable experience that blends adventure with the awe-inspiring beauty of the Himalayan region, making it a must-try activity for any thrill-seeker or nature enthusiast.</p>
+        <br>
+        <button class="btn" onclick="openForm()">Wants to visit/Query</button>
+        </div> 
+    </div>
+
+    <!-- Form Popup -->
+    <div id="form-popup" class="form-popup">
+        <form action="/activityform" method="post" class="form-container">
+            <h2>Contact Us</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Activity Name" required></textarea>
+            <button type="submit" class="btn" onclick="submitForm()">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <!-- Message Popup -->
+    <div id="message-popup" class="form-popup">
+        <div class="form-container">
+            <p id="message-text"></p>
+            <button type="button" class="btn" onclick="closeMessage()">OK</button>
+        </div>
+    </div>
+
+
+    <script>
+        // Function to open the form popup
+        function openForm() {
+            document.getElementById('form-popup').style.display = 'block';
+        }
+
+        // Function to close the form popup
+        function closeForm() {
+            document.getElementById('form-popup').style.display = 'none';
+        
+        // Function to submit the form popup
+        function submitForm() {
+            alert("Form submitted successfully!");
+            closeForm();
+        }
+        }
+         // Function to close the message popup
+         function closeMessage() {
+            document.getElementById('message-popup').style.display = 'none';
+            closeForm();
+        }
+
+        // Function to submit the form popup
+        function submitForm() {
+            // Assuming you would handle form submission here
+            // e.g., send data to a server or validate it
+
+            // Display a success message
+            document.getElementById('message-text').textContent = "Form submitted successfully!";
+            document.getElementById('message-popup').style.display = 'flex';
+
+            // Close the form popup
+            // closeForm();
+        }
+    </script>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dehradun</title>
+    <link rel="stylesheet" href="/dehradun.css">    
+</head>
+<body>
+    <div id="page1">
+        <header>
+        <div class="navbar">
+            <a href="/Safar">HOME</a>
+            <a href="/tourist">TOURIST PLACES</a>
+            <a href="/activity">ACTIVITY</a>
+            <a href="/blog">BLOGS</a>
+        </div>
+        </header>
+        
+        <div class="dehraimg">
+            <h1>Explore Dehradun Tours!</h1>
+            <img class="dehraimg1" src="photos/d1.jpg" alt="Dehradun">
+            <img class="dehraimg1" src="photos/d2.jpg" alt="Dehradun">
+            <img class="dehraimg1" src="photos/d3.jpg" alt="Dehradun">
+            <img class="dehraimg1" src="photos/d4.jpg" alt="Dehradun">
+            <img class="dehraimg1" src="photos/d5.jpg" alt="Dehradun">
+            <img class="dehraimg1" src="photos/d6.jpg" alt="Dehradun">
+        </div>  
+        <div class="about">
+            <div class="about_dehra">
+                <h2>About Dehradun</h2>
+                <p>Dehradun, the capital of Uttarakhand, is a picturesque city nestled in the Doon Valley at the foothills of the Himalayas. It boasts a rich cultural heritage blending Garhwali and Kumaoni traditions, renowned educational institutions like The Doon School and Forest Research Institute, and popular tourist destinations such as Robber's Cave and nearby hill stations like Mussoorie. The city's economy thrives on agriculture, tourism, and education, making it a significant hub in northern India.</p>
+            </div> 
+            <div class="about_dehra">
+                <h2>Things to Do in Dehradun</h2>
+                <p>Visit <b>Robber's Cave (Guchhupani), Tapkeshwar Temple, Sahastradhara, Mindrolling Monastery, Paltan Bazaar, Dehradun Zoo, Clock Tower Dehradun, Shikhar Falls, Rajaji National Park, Kedarkantha Trek, Tiger View Jungle Camp, Rupin Pass Trek, Kalsi, Rafting in Tiuni</b> and many more you can explore.</p>
+                <p>If you are one of those people who enjoy exploring places with a mountainous backdrop, Dehradun is the ideal place for you to visit.It is bordered by the Shivalik range to the south and the Lesser Himalayas to the north, with the Ganges river flowing to its east and the Yamuna river to its west.</p>
+                <p>The city enjoys a temperate climate with mild summers and cool winters, making it a popular destination throughout the year. Dehradun is approximately 230 kilometers north of New Delhi and is well-connected by road, rail (Dehradun Railway Station), and air (Jolly Grant Airport). Its strategic location makes it a gateway to nearby hill stations like Mussoorie and pilgrimage sites such as Haridwar and Rishikesh. The city's setting amidst scenic landscapes and proximity to natural attractions enhances its appeal as a cultural, educational, and tourism hub in northern India.</p>
+            </div>
+            <div class="card">
+                <img src="photos/d1.jpg" alt="Dehradun">
+                <div class="card-caption">
+                    <h2>Robber's Cave (Guchhupani)</h2>
+                    <p>Robber's Cave, locally known as Gucchu Pani, is a river cave formed in the Himalayas. This river cave is believed to be an abode of Lord Shiva. Its speciality is that river water flows out from the middle of the cave.</p>
+                    <button class="btn" onclick="openForm()">Wants to visit</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="photos/d2.jpg" alt="Dehradun">
+                <div class="card-caption">
+                    <h2>Sahastradhara</h2>
+                    <p>Sahastradhara meaning 'thousand fold spring' is popular for its ecstatic beauty and therapeutic value since its water contains Sulphur. Its picturesque beauty attracts a lot of travellers.</p>
+                    <button class="btn" onclick="openForm()">Wants to visit</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="photos/d3.jpg" alt="Dehradun">
+                <div class="card-caption">
+                    <h2>Mindrolling Monastery</h2>
+                    <p>The Mindrolling Monastery, also known as the Buddha Temple Complex, is the largest Buddhist Vihara of India, training monks for over 300 years. Being an architectural masterpiece with several sections, the monastery is a visual wonder. It also houses the tallest Stupa in Asia.</p>
+                    <button class="btn" onclick="openForm()">Wants to visit</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="photos/d5.jpg" alt="Dehradun">
+                <div class="card-caption">
+                    <h2>Dehradun Zoo</h2>
+                    <p>Located at the base of the Shivalik range, Dehradun Zoo, formerly known as Malsi Deer Park, is a zoological garden. It is home to two horned Deer, tigers, Neelgai, Peacock and many other animals. This well maintained zoological garden is an ideal place for a picnic.</p>
+                    <button class="btn" onclick="openForm()">Wants to visit</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="photos/d4.jpg" alt="Dehradun">
+                <div class="card-caption">
+                    <h2>Kadarknatha Trek</h2>
+                    <p>Situated in the lap of mountains of the Tons River Valley, Kedarkanth is a stunning place offering an easy, classic trek. It is a lovely ridge peak accessible throughout the year with plethora of rewarding adventures.</p>
+                    <button class="btn" onclick="openForm()">Wants to visit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Popup -->
+    <div id="form-popup" class="form-popup">
+        <form action="/activityform" method="post" class="form-container">
+            <h2>Contact Us</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Activity Name" required></textarea>
+            <button type="submit" class="btn" onclick="submitForm()">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <!-- Message Popup -->
+    <div id="message-popup" class="form-popup">
+        <div class="form-container">
+            <p id="message-text"></p>
+            <button type="button" class="btn" onclick="closeMessage()">OK</button>
+        </div>
+    </div>
+
+
+    <script>
+        // Function to open the form popup
+        function openForm() {
+            document.getElementById('form-popup').style.display = 'block';
+        }
+
+        // Function to close the form popup
+        function closeForm() {
+            document.getElementById('form-popup').style.display = 'none';
+        
+        // Function to submit the form popup
+        function submitForm() {
+            alert("Form submitted successfully!");
+            closeForm();
+        }
+        }
+         // Function to close the message popup
+         function closeMessage() {
+            document.getElementById('message-popup').style.display = 'none';
+            closeForm();
+        }
+
+        // Function to submit the form popup
+        function submitForm() {
+            // Assuming you would handle form submission here
+            // e.g., send data to a server or validate it
+
+            // Display a success message
+            document.getElementById('message-text').textContent = "Form submitted successfully!";
+            document.getElementById('message-popup').style.display = 'flex';
+
+            // Close the form popup
+            // closeForm();
+        }
+    </script>
+    </div>
+    
+</body>
+</html>

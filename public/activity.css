@@ -1,0 +1,136 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "jetBrains Mono",monospace;
+}
+
+
+.main_page{
+    background-image: url(back.jpg);
+    height: 100vh;
+    padding: 0;
+    position: relative;
+}
+
+.main_page nav{
+    text-align: center;
+    height: 60px;
+    top: 0;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    gap: 50px;
+    opacity: 70%;
+}
+
+nav a{
+    color: white;
+    font-size: 600;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: orangered;
+}
+/* Page4 */
+
+#page4{
+    height: 120vh;
+    padding: 2rem;
+    background-color:#232323;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+#page4 h1{
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+ .page4-top{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0px;
+    width: 100%;
+}
+ .page4-top .box{
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+.page4-top .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    filter: blur(1px);
+
+}
+.page4-top .box .page4text{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    top: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 700;
+    font-size: 40px;
+    opacity: 0;
+}
+.page4-top .box .page4text:hover{
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+}
+
+.page4-bottom
+{
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.page4-bottom .box{
+    height: 300px;
+    width: 300px;
+}
+.page4-bottom .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(1px);
+}
+.page4-content{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.page4-bottom .box .page4text-bt{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    top: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 700;
+    font-size: 40px;
+    opacity: 0;
+}
+.page4-bottom .box .page4text-bt:hover{
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+}
